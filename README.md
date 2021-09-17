@@ -238,7 +238,7 @@ waterpoint_type_group has 0 null values
 * `Funder` and `installer` have ‘0’, ‘-‘ and some other irrelevant character except to the nan values. So impute those with 'other' category
 * `subvillage` and `scheme_management` are grouped by `region_code` and imputed the nan values with mode.
 * `scheme_name` grouped by `region` and imputes the nan values with the mode.
-* `Public_meeting` and `permit` features are simply imputed with the median.
+* `Public_meeting` and `permit` features are simply imputed with the median(In this case equal to the mode).
 
 2. Create New Features
 * Add `cluster` feature to dataset by clustering dataset using KMeans algorithm.`population`,`latitude` and `longitude` features used for clustering.
